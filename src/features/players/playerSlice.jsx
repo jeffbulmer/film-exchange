@@ -6,7 +6,7 @@ export const getPlayers = createAsyncThunk(
   async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8082/api/players/`
+        `https://if7v5jmdpn56xum7yismhkpwhi0vtgks.lambda-url.us-east-1.on.aws/api/players/`
       );
       return response.data;
     } catch (error) {
